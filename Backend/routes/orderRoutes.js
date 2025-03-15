@@ -3,8 +3,7 @@ const router = express.Router();
 const Order = require('../models/order');
 const Restaurant = require('../models/Restaurant');
 
-
-//Place an Order
+// Place an Order
 router.post('/', async (req, res) => {
     const { restaurantId, items } = req.body;
     
@@ -20,8 +19,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-//Get All Orders
-
+// Get All Orders
 router.get('/', async (req, res) => {
     try {
         const orders = await Order.find().populate('restaurantId', 'name');

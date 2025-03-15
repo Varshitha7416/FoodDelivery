@@ -1,0 +1,16 @@
+.order-summary {
+    padding: 20px;
+    text-align: center;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary li {
+    margin: 10px 0;
+    background: #e6e6fa;
+    padding: 10px;
+    border-radius: 5px;
+}
